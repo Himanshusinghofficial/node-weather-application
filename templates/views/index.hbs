@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index page</title>
+    <link rel="icon" href="https://mk0atomicsmashcd7n46.kinstacdn.com/wp-content/uploads/2019/02/WeatherPress-Plugin-1108x0-c-default.png">
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+    <div class="main-content">
+           {{>header}}
+        <p>use this site to get your weather!</p>
+
+        <form>
+          <input placeholder="Location">
+          <button>Search</button>
+        </form>
+        <div>
+            <p id="message_1"></p>
+            <p id="message_2"></p>
+            <p id="message_3"></p>
+            <p id="message_4"></p>
+            <p id="message_5"></p>
+            <p id="message_6"></p>
+        </div>
+        {{!-- <p id="message_1"></p>
+        <p id="message_2"></p>
+        <p id="message_3"></p>
+        <p id="message_4"></p>
+        <p id="message_5"></p>
+        <p id="message_6"></p> --}}
+        {{!-- <p id="message_7"></p> --}}
+
+    </div>
+     {{!-- <h1>{{title}}</h1> --}}
+     {{!-- <p>Created by {{name}}</p> --}}
+     {{>footer}}
+
+     <script src="./js/script.js"></script>
+</body>
+</html>
