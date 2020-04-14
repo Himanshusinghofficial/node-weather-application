@@ -11,11 +11,11 @@ const forecast=(latitude,longitude,callback)=>{
         }
         else{
             var date=new Date((response.body.dt*1000)+19800)
-                 var dateval=date.toString();
+                 var dateval=date.toLocaleString();
             var sunrise=new Date((response.body.sys.sunrise*1000)+19800)
-            sunriseval=sunrise.toTimeString();
+            sunriseval=sunrise.toLocaleTimeString();
             var sunset=new Date((response.body.sys.sunset*1000)+19800)
-            sunsetval=sunset.toTimeString();
+            sunsetval=sunset.toLocaleTimeString();
              
         //  callback(undefined, 'Weather condition '+response.body.weather[0].main + ' It is currently ' + (response.body.main.temp) +' deg C' +'                                                                                       Date:'+  date + '                                                                                                               sunrise:' + sunrise +'                                                                                                                 sunset:'+sunset)
          callback(undefined,{
